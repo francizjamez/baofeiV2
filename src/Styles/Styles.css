@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+nav {
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+}
+
+.cart-icon {
+  transition: color 500ms ease-out;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.904);
+  color: black;
+}
+
+.cart {
+  position: absolute;
+  right: -100vw;
+  height: 100vh;
+  width: 22%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.815);
+  transition: right 400ms ease;
+}
+
+.show {
+  right: 0;
+}
+
+@media only screen and (max-width: 420px) {
+  nav {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+}
+/* =============
+    Table of Contents:
+        1. Intro
+        2. Baofei Logo
+        3. Twitter Logo
+        4. Facebook Logo
+        5. Media
+  ============== */
+/* Intro */
+.Intro {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/174141298_264458285363089_4743381462693376987_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeEpJCFq_vgVYjKk04ygl50QeBPcISYTgXt4E9whJhOBe9hKygoDL2NpMHhlCQWORFI&_nc_ohc=Vf6cqnWaf9AAX8dLpL7&_nc_ht=scontent.fcrk4-1.fna&oh=70fe88cac8945779f62bda83afc4bdae&oe=60B960A5);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.baofei-logo {
+  width: 25%;
+  margin-top: 5rem;
+}
+
+.social-media {
+  padding: 4rem 0rem;
+  display: flex;
+  gap: 6rem;
+}
+
+/* Media */
+@media only screen and (max-width: 420px) {
+  .social-media {
+    gap: 4rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+}
